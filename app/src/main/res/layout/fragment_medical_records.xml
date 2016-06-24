@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:dividerHeight="@dimen/dp_18"
+        android:padding="@dimen/dp_10"
+        android:scrollbars="none">
+
+    </ListView>
+    <com.graduatedesign.hsl.yian.widgetlibrary.CustomFAB
+        android:id="@+id/medical_card_add"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/floatbutton_margin_right"
+        android:background="@drawable/floatbutton_border"
+        android:tint="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+//        multiDexEnabled true
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile(project(':viewPagerIndicator_Library')) {
+        exclude module: 'support-v4'
+    }
+    compile(project(':slideMenu_Library')) {
+        exclude module: 'support-v4'
+    }
+    compile('com.google.code.gson:gson:2.3.1') {
+        exclude module: 'support-v4'
+    }
+    compile('com.beardedhen:androidbootstrap:1.1.0') {
+        exclude module: 'support-v4'
+    }
+    compile('com.jakewharton:butterknife:6.1.0') {
+        exclude module: 'support-v4'
+    }
+    compile('com.android.support:appcompat-v7:20+') {
+        exclude module: 'support-v4'
+    }
+
+    compile('com.norbsoft.typefacehelper:library:0.9.0') {
+        exclude module: 'support-v4'
+    }
+    compile('in.srain.cube:clog:1.0.2') {
+        exclude module: 'support-v4'
+    }
+
+    compile('in.srain.cube:cube-sdk:1.0.44@aar') {
+        exclude module: 'support-v4'
+    }
+    compile('in.srain.cube:ultra-ptr:1.0.8@aar') {
+        exclude module: 'support-v4'
+    }
+    compile('de.greenrobot:greendao:1.3.7') {
+        exclude module: 'support-v4'
+    }
+    compile(project(':library')) {
+        exclude module: 'support-v4'
+    }
+    compile('com.squareup.okhttp:okhttp-urlconnection:2.0.0'){
+        exclude module: 'support-v4'
+    }
+    compile('com.squareup.okhttp:okhttp:2.0.0'){
+        exclude module: 'support-v4'
+    }
+    compile ('com.squareup.retrofit2:converter-gson:2.0.2'){
+        exclude module: 'support-v4'
+    }
+    compile('com.squareup.retrofit2:retrofit:2.0.2'){
+        exclude module: 'support-v4'
+    }
+    compile('com.squareup.retrofit2:adapter-rxjava:2.0.1'){
+        exclude module: 'support-v4'
+    }
+    compile ('com.squareup.okhttp3:logging-interceptor:3.0.1'){
+        exclude module: 'support-v4'
+    }
+}

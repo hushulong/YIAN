@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/gray_line"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="@dimen/dp_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White_Snow">
+        <ImageView
+            android:id="@+id/img_back"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:text="@string/personal_info"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/codoon_black_color"/>
+        <ImageView
+            android:id="@+id/img_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:background="@drawable/right"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_01"
+        android:background="@color/grey_8e">
+
+    </View>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <!--touxiang-->
+
+            <RelativeLayout
+                android:id="@+id/user_image_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:padding="@dimen/dp_10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/head_image"
+                    android:textColor="@color/codoon_black_color"/>
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:scaleType="center"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_touxiang"
+                    android:layout_toLeftOf="@+id/turn_right1"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- xingming-->
+            <RelativeLayout
+                android:id="@+id/user_name_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:padding="@dimen/dp_10"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/name"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toLeftOf="@+id/turn_right2"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- xingbie-->
+            <RelativeLayout
+                android:id="@+id/user_sex_layout"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/sex"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toLeftOf="@+id/turn_right3"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- shoujihaoma-->
+            <RelativeLayout
+                android:id="@+id/user_mobile_layout"
+                android:layout_width="match_parent"
+
+                android:padding="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toLeftOf="@+id/turn_right4"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- shenfen-->
+            <RelativeLayout
+                android:id="@+id/user_identity_layout"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/identify"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/turn_right5"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- weixin-->
+            <RelativeLayout
+                android:id="@+id/user_weixin_layout"
+
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/weixin"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toLeftOf="@+id/turn_right6"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <!-- diqu-->
+            <RelativeLayout
+                android:id="@+id/user_area_layout"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_10"
+                android:background="@color/White_Snow"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_18"
+                    android:text="@string/area"
+                    android:textColor="@color/codoon_black_color"/>
+                <TextView
+                    android:id="@+id/user_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toLeftOf="@+id/turn_right7"
+                    android:layout_marginRight="@dimen/dp_10"
+                    />
+                <ImageView
+                    android:id="@+id/turn_right7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_right_arrow_userinfo"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_out"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/white"
+                android:background="@color/red_dark"
+                android:layout_margin="@dimen/dp_10"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

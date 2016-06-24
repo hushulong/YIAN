@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White_Snow">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <in.srain.cube.image.CubeImageView
+            android:id="@+id/chinese_medicine_image"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/iconfont_shicai"
+           />
+        <TextView
+            android:id="@+id/chinese_medicine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/chinese_medicine_image"
+            android:layout_centerVertical="true"
+            android:text="五味子"
+            android:textColor="@color/codoon_black_color"
+            android:textSize="@dimen/sp_18"/>
+        <TextView
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/codoon_black_color"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textSize="@dimen/sp_18"
+            android:layout_below="@+id/chinese_medicine_image"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

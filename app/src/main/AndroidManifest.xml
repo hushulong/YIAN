@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.graduatedesign.hsl.yian">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.UserInfoActivity"/>
+        <activity android:name=".activitys.PublishActivity"/>
+        <activity android:name=".activitys.IntegrationActivity"/>
+        <activity android:name=".activitys.DownloadActivity"/>
+        <activity android:name=".activitys.AboutActivity"/>
+        <activity android:name=".activitys.RecommendActivity"/>
+        <activity android:name=".activitys.SetActivity"/>
+        <activity android:name=".activitys.ChineseMedicineActivity"/>
+        <activity android:name=".activitys.ChinesePatentMedicineActivity"/>
+        <activity android:name=".activitys.ClassicBookActivity"/>
+        <activity android:name=".activitys.DoseConversionActivity"/>
+        <activity android:name=".activitys.FamousBiographyActivity"/>
+        <activity android:name=".activitys.FamousMedicalRecordActivity"/>
+        <activity android:name=".activitys.IngredientActivity"/>
+        <activity android:name=".activitys.MeridianPointActivity"/>
+        <activity android:name=".activitys.PrescriptionActivity"/>
+        <activity android:name=".activitys.UserNameActivity"/>
+        <activity android:name=".activitys.UserSexActivity"/>
+        <activity android:name=".activitys.UserMobileNumActivity"/>
+        <activity android:name=".activitys.UserIdentityActivity"/>
+        <activity android:name=".activitys.AddPatientRecordsActivity"/>
+        <activity android:name=".activitys.PatientRecordActivity"/>
+        <activity android:name=".activitys.PatientInfoActivity"/>
+        <activity android:name=".activitys.AddPatientCardActivity"/>
+        <activity android:name=".activitys.PatientCardActivity"/>
+        <activity android:name=".activitys.user.UserLoginActivity"/>
+        <activity android:name=".activitys.user.RegistActivity"/>
+        <activity android:name=".activitys.ChineseMedicineInfoActivity"/>
+        <activity android:name=".activitys.AddNoteActivity"/>
+        <activity android:name=".activitys.NoteInfoActivity"/>
+        <activity android:name=".activitys.ForPublicUseActivity"/>
+    </application>
+
+</manifest>

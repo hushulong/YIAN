@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ListView
+    android:id="@+id/lv_chinese_medicine"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_Snow"
+    android:divider="@color/light_grey"
+    android:dividerHeight="@dimen/dp_18"
+    android:padding="@dimen/dp_10"
+    android:scrollbars="none"
+    tools:context=".fragments.MedicineTransitionFragment"/>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+    <in.srain.cube.image.CubeImageView
+        android:id="@+id/chinese_medicine_image"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/chinese_medicine_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@+id/chinese_medicine_image"
+        android:layout_centerVertical="true"
+        android:textColor="@color/codoon_black_color"
+        android:textSize="@dimen/sp_18"/>
+    <ImageView
+        android:id="@+id/turn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_right_arrow_userinfo"
+        />
+</RelativeLayout>
